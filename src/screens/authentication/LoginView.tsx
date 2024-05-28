@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, StyleSheet } from 'react-native';
+import { View, TextInput, Button, StyleSheet, Text } from 'react-native';
 
 const LoginView = () => {
   const [username, setUsername] = useState('');
@@ -28,6 +28,7 @@ const LoginView = () => {
         title="Login"
         onPress={handleLogin}
       />
+      <Text style={styles.accountLabel}>Create new account?</Text>
     </View>
   );
 };
@@ -46,7 +47,18 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'gray',
     borderRadius: 5,
-  }
+  },
+  accountLabel: {
+    marginTop: 20,
+    color: 'blue',
+    textDecorationLine: 'underline',
+  },
+  accountLabel: {  // New style for the Text component
+    marginTop: 20,
+    fontSize: 16,
+    color: 'blue',
+    textDecorationLine: 'underline',
+  },
 });
 
 export default LoginView;
