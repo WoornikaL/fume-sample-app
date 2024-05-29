@@ -48,11 +48,6 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderRadius: 5,
   },
-  accountLabel: {
-    marginTop: 20,
-    color: 'blue',
-    textDecorationLine: 'underline',
-  },
   accountLabel: {  // New style for the Text component
     marginTop: 20,
     fontSize: 16,
