@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { View, TextInput, Button, Text, StyleSheet } from "react-native";
 
 
@@ -11,7 +11,7 @@ const LoginView = () => {
   };
 
   const handleSignUp = () => {
-    // Logic to handle user sign-up or navigation to sign-up screen
+    console.log('Navigating to sign-up screen');
     console.log('Navigating to sign-up screen');
   };
 
@@ -38,7 +38,7 @@ const LoginView = () => {
       <Button
         title="SignUp"
         onPress={handleSignUp}
-        color="blue"
+        color="gray"
       />
     </View>
   );
