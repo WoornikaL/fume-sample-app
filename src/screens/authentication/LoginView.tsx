@@ -34,10 +34,6 @@ const LoginView = () => {
         title="Login"
         onPress={handleLogin}
       />
-      <Button
-        title="Login"
-        onPress={handleLogin}
-      />
       <Text style={styles.accountLabel}>Create new account?</Text>
       <Button
         title="SignUp"
