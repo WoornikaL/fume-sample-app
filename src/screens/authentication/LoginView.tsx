@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { View, TextInput, Button, Text, StyleSheet } from "react-native";
+
 
 const LoginView = () => {
   const [username, setUsername] = useState('');
@@ -31,10 +34,6 @@ const LoginView = () => {
         title="Login"
         onPress={handleLogin}
       />
-      <Button
-        title="Login"
-        onPress={handleLogin}
-      />
       <Text style={styles.accountLabel}>Create new account?</Text>
       <Button
         title="SignUp"
@@ -61,7 +60,7 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderRadius: 5,
   },
-  accountLabel: {
+  accountLabel: {  // New style for the Text component
     marginTop: 20,
     fontSize: 16,
     color: 'blue',
