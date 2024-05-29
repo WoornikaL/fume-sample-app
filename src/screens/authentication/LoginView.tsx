@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { View, TextInput, Button, StyleSheet, Text } from 'react-native';
+import { useState } from "react";
+import { View, TextInput, Button, Text, StyleSheet } from "react-native";
+
 
 const LoginView = () => {
   const [username, setUsername] = useState('');
@@ -7,6 +8,11 @@ const LoginView = () => {
 
   const handleLogin = () => {
     console.log('Login attempt with:', username, password);
+  };
+
+  const handleSignUp = () => {
+    // Logic to handle user sign-up or navigation to sign-up screen
+    console.log('Navigating to sign-up screen');
   };
 
   return (
@@ -28,10 +34,20 @@ const LoginView = () => {
         title="Login"
         onPress={handleLogin}
       />
+      <Button
+        title="Login"
+        onPress={handleLogin}
+      />
       <Text style={styles.accountLabel}>Create new account?</Text>
+      <Button
+        title="SignUp"
+        onPress={handleSignUp}
+        color="blue"
+      />
     </View>
   );
 };
+
 
 const styles = StyleSheet.create({
   container: {
